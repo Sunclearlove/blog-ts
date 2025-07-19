@@ -10,7 +10,7 @@ import 'highlight.js/styles/github.css' // 或其他样式
 import { Metadata } from 'next'
 
 interface Props {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
 export const revalidate = 60 // 每 60 秒重新生成页面
